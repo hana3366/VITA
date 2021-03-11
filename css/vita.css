@@ -1,0 +1,157 @@
+@charset 'utf-8';
+@import url('common.css');
+
+
+header > div{
+    width:91%;
+	height: 80px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header div h2{
+	width: 80px;
+	height: 44px;
+	margin: 0 13px;  
+}
+header div nav{
+	margin-right:-30px;
+}    
+
+header div nav:nth-of-type(1){
+    margin-left:auto ;
+}
+
+header div nav ul li{
+	display: inline-block;
+	position: relative;
+	right:35px;
+    text-decoration:none;
+     
+}    
+
+header div nav ul li > h4{
+	text-align: left;
+	color:black;
+	text-decoration: none;
+	font-family:Helvetica;
+	margin-right:80px;
+	margin-left:10px;
+    		
+}
+
+header .menu3 {
+	width: 26px; height: 14px;
+	display: block;
+	position: relative;
+	
+}
+header .menu3 span {
+	width: 100%; height: 2px;
+	background: black;
+	position: absolute;
+    right: 2px;
+	
+}
+header .menu3 span:nth-of-type(1){top:0}
+header .menu3 span:nth-of-type(2){top:calc(50% - 1px);}
+header .menu3 span:nth-of-type(3){bottom:0;}
+
+
+.content .maining img{
+	position: relative;
+	top:0; left:0;
+	width:1900px;height:865px;
+
+}
+
+.content .text h2{}
+
+
+
+.content .text_01{
+	position: absolute;
+	/* background:rgba(0,0,0,0.6); */
+	left:0; top:0;
+	height: 100%;
+	width:400px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	padding: 0 100px;
+}
+
+.content .text h1{
+	position: absolute;
+	left: 800px;
+	top: 200px;
+	color:white;
+	font-size: 4em;
+}
+.content .text p{
+	position: absolute;
+	left: 800px;
+	top:400px;
+	color:white;
+}
+
+.tab a{
+	position: absolute;
+	left: 800px;
+	top:500px;
+	color:white;
+}
+
+.tab-content div{
+	margin-top: 90px;
+    width:500px;height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	display: none;
+	
+	
+}
+.tab-content div.active{
+	display: flex;
+}
+
+
+.content .image{
+	position: absolute;
+	top: 200px;
+	left:300px;
+	
+}
+
+.content .ellipse{
+	position: absolute;
+	top:500px;
+	left:950px;
+}
+.content .ellipse a{
+	color:rgba(255, 255, 255, 0.6);
+	border-radius:10px;
+	width:19px; height:19px;
+	display:inline-block;
+	
+	
+}	
+.content .footer{
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	left: 1750px;
+	top:900px;
+	display: block;
+}	
+.content .footer img{
+	padding:10px;
+}
+

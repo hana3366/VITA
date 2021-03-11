@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/vita.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <div>
+            <h2>VITA500</h2>
+            <nav>
+                <ul>
+                    <li>
+                        <h4>About</h4>
+                    </li>
+
+                    <li>
+                        <h4>Product</h4>
+                    </li>
+
+                    <li>
+                        <h4>Contect us</h4>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <nav>
+                <a href="#" class="menu3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+        
+
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="maining">
+            <img src="img/Untitled-2.jpg">
+        </div>
+        <div class="text">
+            <h1>SPECIAL COLLECTION<br>
+                OF NATURAL PRODUCT
+            </h1>
+            <p>WE STRIVE TO BRING ABOUT A SUSTAINABLE WAY OF MAKING JEWELRY.<br>
+               BOTH CONSCIOUS AND ENLIGHTENED.<br>
+               WE WISH TO CREATE JEWELS IN A SPIRIT OF GOODWILL.
+            </p>        
+        </div>
+       
+        
+        <div class="image">
+            <img src="img/img-vita.png">
+        </div>    
+
+        <div class="text_01">
+            <h2>01</h2>
+        </div> 
+        
+        <div class="ellipse">
+            <a></a>
+            <a></a>
+            <a></a>
+        </div>
+
+        <div class= "footer">
+            <img src="img/ic_twitter.png">
+            <img src="img/ic_insta.png">
+            <img src="img/ic_facebook.png">
+        </div>   
+         
+                
+
+    </main>
+    <div class="tab">
+        <a href="view product" class="active">VIEW PRODUCTS</a> 
+    </div>    
+
+    <div class="tab-content">
+        <div class="view product"><img src="img/img-popup.jpg"></div>
+    </div>
+
+
+
+    
+</body>
+
+<script>
+    var tabBtns=document.querySelector('.tab a')
+    var tabContent.querySelector('.tab-content > div')
+
+    tabBtns.forEach(function(el,key){
+        el.addEventListener('click',function(e){
+            e.preventDefault();
+
+            tabBtns.forEach(function(els){
+                els.classList.remove('active'),
+            })
+            this classList.add('active');
+
+            var name = this.getAttribute('href');
+            tabContent.forEach(function(els){
+                if(els.className == name){
+                    els.classList.add('active');
+                }else{
+                    els.classList.remove('active');
+                }
+            })
+
+
+
+        })
+    })
+
+</script>
+
+
+
+</html>
